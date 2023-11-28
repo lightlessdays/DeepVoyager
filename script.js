@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("description").classList.add("invisible")
     appendUserMessage(userMessage);
+    toggleChatBox();
     callAPI(userMessage);
     userInput.value = "";
   });
@@ -64,17 +65,20 @@ document.addEventListener("DOMContentLoaded", function () {
             appendBotMessage(
               "I am sorry, but I cannot answer your question, because it was too violent, extreme, dangerous or had malicious intentions."
             );
+            toggleChatBox();
           }
         }
 
         if (generatedText) {
           appendBotMessage(generatedText);
+          toggleChatBox();
           // chatContainer.scrollTop = chatContainer.scrollHeight;
           document.getElementById("scrollToBottom").scrollIntoView();
         } else if (harmMessage) {
           //do nothing
         } else {
           appendBotMessage("Sorry, I couldn't understand that. 🥺");
+          toggleChatBox();
         }
       } else {
         throw new Error("Failed to fetch");
@@ -82,6 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } catch (error) {
       console.error("Error:", error);
       appendBotMessage("Sorry, there was a problem with my servers 🥺.");
+      toggleChatBox();
     }
   }
 });
@@ -97,4 +102,12 @@ function toggleMenu(){
 
 const menu = document.getElementById('menu');
   menu.classList.toggle('showmenu');
+}
+
+function toggleChatBox(){
+  const chatBox = document.getElementById('inputbox');
+  const loadingBox = document.getElementById('loadingBox');
+
+  chatBox.classList.toggle('invisible')
+  loadingBox.classList.toggle('invisible')
 }
