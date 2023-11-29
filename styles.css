@@ -230,6 +230,10 @@ textarea::-webkit-selection {
     display: none;
 }
 
+.anchorlogo{
+    display:none;
+}
+
 
 /*MODIFYING THE DESKTOP ELEMENTS*/
 @media (max-width: 767px) {
@@ -237,6 +241,10 @@ textarea::-webkit-selection {
         padding: 10px;
         padding-top: 100px;
         padding-bottom: 70px;
+    }
+
+    .anchorlogo{
+        display:revert;
     }
 
     .absolute {
@@ -249,7 +257,14 @@ textarea::-webkit-selection {
     }
 
     textarea {
-        font-size: 20px !important;
+        font-size: 18px !important;
     }
 
+    /* .title{
+        display:none;
+    } */
+
+    .menu-part{
+        padding: 0px 20px;
+    }
 }
