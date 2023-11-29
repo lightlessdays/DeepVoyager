@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const userMessage = userInput.value;
     if (userMessage.trim() === "") return;
 
-    document.getElementById("description").classList.add("invisible")
+    document.getElementById("description").classList.add("invisible");
     appendUserMessage(userMessage);
     toggleChatBox();
     callAPI(userMessage);
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const userDiv = document.createElement("div");
     userDiv.classList.add("user-message");
     userDiv.innerText = message;
-    userDivParent.appendChild(userDiv)
+    userDivParent.appendChild(userDiv);
     chatContainer.appendChild(userDivParent);
   }
 
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const botDiv = document.createElement("div");
     botDiv.classList.add("bot-message");
     botDiv.innerText = message;
-    botDivParent.appendChild(botDiv)
+    botDivParent.appendChild(botDiv);
     chatContainer.appendChild(botDivParent);
   }
 
@@ -70,6 +70,13 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (generatedText) {
+          if(generatedText.includes("PaLM")){
+            generatedText = "God made me.";
+          }
+
+          // if(["who created you","who made you","who invented you"].includes(message.toLowerCase())){
+          //   generatedText = "VOILA"
+          // }
           appendBotMessage(generatedText);
           toggleChatBox();
           // chatContainer.scrollTop = chatContainer.scrollHeight;
@@ -91,23 +98,21 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-
-function setTextAreaValue (textAreaValue) {
+function setTextAreaValue(textAreaValue) {
   const textArea = document.getElementById("user-input");
-  textArea.value=textAreaValue;
-  document.getElementById('send-btn').click();
-};
-
-function toggleMenu(){
-
-const menu = document.getElementById('menu');
-  menu.classList.toggle('showmenu');
+  textArea.value = textAreaValue;
+  document.getElementById("send-btn").click();
 }
 
-function toggleChatBox(){
-  const chatBox = document.getElementById('inputbox');
-  const loadingBox = document.getElementById('loadingBox');
+function toggleMenu() {
+  const menu = document.getElementById("menu");
+  menu.classList.toggle("showmenu");
+}
 
-  chatBox.classList.toggle('invisible')
-  loadingBox.classList.toggle('invisible')
+function toggleChatBox() {
+  const chatBox = document.getElementById("inputbox");
+  const loadingBox = document.getElementById("loadingBox");
+
+  chatBox.classList.toggle("invisible");
+  loadingBox.classList.toggle("invisible");
 }

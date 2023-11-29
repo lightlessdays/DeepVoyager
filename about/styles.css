@@ -1,6 +1,6 @@
-.explanationpart{
-    
-    display:flex;
+.explanationpart {
+
+    display: flex;
     /* position: absolute; */
     flex-direction: column;
     padding: 100px 0px 0px 0px;
@@ -14,17 +14,17 @@
     /* background-color: red; */
 }
 
-a{
-    color:black !important;
+a {
+    color: black !important;
 }
 
-a:hover{
-    color:black !important;
+a:hover {
+    color: black !important;
     text-decoration: none !important;
 }
 
 
-.sliderright{
+.sliderright {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -37,7 +37,7 @@ a:hover{
 }
 
 @media (max-width: 800px) {
-    .explanationpart{
+    .explanationpart {
         padding: 100px 30px 0px 30px;
-    }    
+    }
 }

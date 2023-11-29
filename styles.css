@@ -2,24 +2,25 @@
      height: 100%; 
 } */
 
-a{
+a {
     color: black !important;
 }
 
-a:hover{
-    color:black !important;
+a:hover {
+    color: black !important;
     text-decoration: none !important;
 }
-.main{
+
+.main {
     display: flex;
     flex-direction: column;
 }
 
-.centerpage{
+.centerpage {
     z-index: 1000000;
     background-color: transparent;
     width: 100%;
-    height:100%;
+    height: 100%;
     max-height: 50px;
     display: flex;
     align-items: center;
@@ -27,8 +28,8 @@ a:hover{
 }
 
 
-.menu{
-    position:absolute;
+.menu {
+    position: absolute;
     background-color: white;
     height: 100%;
     width: 100%;
@@ -36,35 +37,37 @@ a:hover{
     justify-content: center;
     vertical-align: middle;
     align-items: center;
-    color:grey;
+    color: grey;
     /* display: flex; */
     flex-direction: column;
     display: none;
-    
+
 }
 
-.showmenu{
+.showmenu {
     display: flex !important;
 }
 
-.title{
+.title {
     /* font-weight: bold; */
     font-size: 30px;
 }
 
-.menuicon{
-    color:grey
-}
-.menuicon:hover{
-    color:black;
-    cursor:pointer;
+.menuicon {
+    color: grey
 }
 
-.title:hover{
+.menuicon:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.title:hover {
     font-weight: bold;
 }
-.menu a{
-    color:grey;
+
+.menu a {
+    color: grey;
     font-size: 40px !important;
     line-height: 20px;
     /* font-weight: bold; */
@@ -72,24 +75,25 @@ a:hover{
     font-family: Geneva, Verdana, sans-serif;
 }
 
-.menu a:hover{
+.menu a:hover {
     text-decoration: none;
-    color:black;
-    cursor:pointer;
+    color: black;
+    cursor: pointer;
     font-weight: bold;
 }
 
-.currentpage a{
+.currentpage a {
     color: black !important;
 }
-.menuitem:hover{
+
+.menuitem:hover {
     text-decoration: none;
-    color:black;
-    cursor:pointer;
+    color: black;
+    cursor: pointer;
     font-weight: bold;
 }
 
-.menu-part{
+.menu-part {
     background-color: white;
     justify-content: space-between;
     align-items: center;
@@ -98,14 +102,14 @@ a:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
     flex-direction: row;
-    padding:0px 60px;
+    padding: 0px 60px;
     position: fixed;
     width: 100%;
 }
 
 body::-webkit-scrollbar {
     display: none;
-  }
+}
 
 .chat {
     /* max-height: 300px; */
@@ -113,7 +117,7 @@ body::-webkit-scrollbar {
     padding: 20px 120px;
     padding-bottom: 85px;
     padding-top: 100px;
-    flex:1;
+    flex: 1;
 }
 
 .bot-message {
@@ -123,11 +127,11 @@ body::-webkit-scrollbar {
     margin-bottom: 5px;
 }
 
-.user-parent-div{
+.user-parent-div {
     padding-left: 50px;
 }
 
-.bot-parent-div{
+.bot-parent-div {
     padding-right: 50px;
 }
 
@@ -144,7 +148,7 @@ body::-webkit-scrollbar {
     /* Black border */
 }
 
-#inputbox{
+#inputbox {
     background-color: #f1f5f9;
 }
 
@@ -166,7 +170,7 @@ input:focus {
     /* text-align: center; */
 }
 
-.black{
+.black {
     background-color: black;
 }
 
@@ -178,60 +182,74 @@ textarea::-webkit-scrollbar {
     display: none;
 }
 
-input:focus, textarea:focus{
+input:focus,
+textarea:focus {
     box-shadow: none !important;
     border-color: black !important;
     border-width: 2px;
 }
 
 
-textarea::selection { background:#B9B9B9; color:#000000; border-color: black; }
-textarea::-moz-selection { background:#B9B9B9; color:#000000; }
-textarea::-webkit-selection { background:#B9B9B9; color:#000000; border-color:black; }
+textarea::selection {
+    background: #B9B9B9;
+    color: #000000;
+    border-color: black;
+}
 
-.description{
-    font-size: clamp(0px,3vw,30px);
-    color:#9ca3af;
-    padding:120px 50px;
+textarea::-moz-selection {
+    background: #B9B9B9;
+    color: #000000;
+}
+
+textarea::-webkit-selection {
+    background: #B9B9B9;
+    color: #000000;
+    border-color: black;
+}
+
+.description {
+    font-size: clamp(0px, 3vw, 30px);
+    color: #9ca3af;
+    padding: 120px 50px;
     vertical-align: center;
 
 }
 
-.descriptiondark{
+.descriptiondark {
     color: #0b0b0b;
     text-decoration: underline;
 }
 
-.descriptiondark:hover{
-    color:black;
+.descriptiondark:hover {
+    color: black;
     font-weight: bold;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.invisible{
+.invisible {
     display: none;
 }
 
 
 /*MODIFYING THE DESKTOP ELEMENTS*/
 @media (max-width: 767px) {
-    .chat{
-        padding:  10px;
+    .chat {
+        padding: 10px;
         padding-top: 100px;
         padding-bottom: 70px;
     }
-    .absolute{
+
+    .absolute {
         padding: 10px 20px;
     }
 
-    .description{
+    .description {
         padding: 40px 25px;
-        font-size: clamp(0px,5vw,25px);
+        font-size: clamp(0px, 5vw, 25px);
     }
 
-    textarea{
+    textarea {
         font-size: 20px !important;
     }
-    
-}
 
+}

@@ -1,9 +1,9 @@
-a{
+a {
     color: black !important;
 }
 
-a:hover{
-    color:black !important;
+a:hover {
+    color: black !important;
     text-decoration: none !important;
 }
 
@@ -12,8 +12,8 @@ a:hover{
     flex-direction: column;
 }
 
-a:hover{
-    color:black;
+a:hover {
+    color: black;
     text-decoration: none;
 }
 

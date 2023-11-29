@@ -1,23 +1,24 @@
-a{
+a {
     color: black !important;
 }
 
-a:hover{
-    color:black !important;
+a:hover {
+    color: black !important;
     text-decoration: none !important;
 }
 
-.main{
+.main {
     display: flex;
     flex-direction: column;
 }
-a:hover{
-    color:black;
+
+a:hover {
+    color: black;
     text-decoration: none;
 }
 
-.menu{
-    position:absolute;
+.menu {
+    position: absolute;
     background-color: white;
     height: 100%;
     width: 100%;
@@ -25,39 +26,41 @@ a:hover{
     justify-content: center;
     vertical-align: middle;
     align-items: center;
-    color:grey;
+    color: grey;
     /* display: flex; */
     flex-direction: column;
     display: none;
-    
+
 }
 
-.currentpage a{
+.currentpage a {
     color: black !important;
 }
 
-.showmenu{
+.showmenu {
     display: flex !important;
 }
 
-.title{
+.title {
     /* font-weight: bold; */
     font-size: 30px;
 }
 
-.menuicon{
-    color:grey
-}
-.menuicon:hover{
-    color:black;
-    cursor:pointer;
+.menuicon {
+    color: grey
 }
 
-.title:hover{
+.menuicon:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.title:hover {
     font-weight: bold;
 }
-.menu a{
-    color:grey;
+
+.menu a {
+    color: grey;
     font-size: 40px !important;
     line-height: 20px;
     /* font-weight: bold; */
@@ -65,21 +68,21 @@ a:hover{
     font-family: Geneva, Verdana, sans-serif;
 }
 
-.menu a:hover{
+.menu a:hover {
     text-decoration: none;
-    color:black;
-    cursor:pointer;
+    color: black;
+    cursor: pointer;
     font-weight: bold;
 }
 
-.menuitem:hover{
+.menuitem:hover {
     text-decoration: none;
-    color:black;
-    cursor:pointer;
+    color: black;
+    cursor: pointer;
     font-weight: bold;
 }
 
-.menu-part{
+.menu-part {
     background-color: white;
     justify-content: space-between;
     align-items: center;
@@ -88,16 +91,17 @@ a:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
     flex-direction: row;
-    padding:0px 60px;
+    padding: 0px 60px;
     position: fixed;
     width: 100%;
     /* display:none; */
 }
+
 body::-webkit-scrollbar {
     display: none;
-  }
+}
 
-  .body-part{
+.body-part {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -106,20 +110,20 @@ body::-webkit-scrollbar {
     vertical-align: middle;
     font-size: 40px;
     padding: 30px 50px;
-  }
+}
 
-  .body-part a{
-    color:black;
+.body-part a {
+    color: black;
     font-weight: bold;
-  }
+}
 
-  .body-part a:hover{
-    color:black;
-  }
+.body-part a:hover {
+    color: black;
+}
 
-  @media (max-width: 767px) {
-    .body-part{
+@media (max-width: 767px) {
+    .body-part {
         font-size: 20px;
     }
-    
+
 }
