@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
           prompt: {
             text: message,
           },
+          // temperature: 1,
         }),
       });
 
