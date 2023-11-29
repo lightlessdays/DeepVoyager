@@ -144,7 +144,9 @@ body::-webkit-scrollbar {
     /* Black border */
 }
 
-
+#inputbox{
+    background-color: #f1f5f9;
+}
 
 input:focus {
     color: #212529;
@@ -191,6 +193,7 @@ textarea::-webkit-selection { background:#B9B9B9; color:#000000; border-color:bl
     font-size: clamp(0px,3vw,30px);
     color:#9ca3af;
     padding:120px 50px;
+    vertical-align: center;
 
 }
 
@@ -223,7 +226,11 @@ textarea::-webkit-selection { background:#B9B9B9; color:#000000; border-color:bl
 
     .description{
         padding: 40px 25px;
-        font-size: 5vw;
+        font-size: clamp(0px,5vw,25px);
+    }
+
+    textarea{
+        font-size: 20px !important;
     }
     
 }
