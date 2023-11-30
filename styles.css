@@ -118,6 +118,7 @@ body::-webkit-scrollbar {
     padding-bottom: 85px;
     padding-top: 100px;
     flex: 1;
+    overflow-x: hidden;
 }
 
 .bot-message {
@@ -125,6 +126,7 @@ body::-webkit-scrollbar {
     border-radius: 10px;
     padding: 8px;
     margin-bottom: 5px;
+    overflow-x: hidden;
 }
 
 .user-parent-div {
