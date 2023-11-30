@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const menu = document.getElementById("menu");
     const mainF = document.getElementById("main")
     menu.classList.toggle("showmenu");
-    main.classList.toggle("invisible");
+    mainF.classList.toggle("invisible");
   }
   
   function toggleChatBox() {
