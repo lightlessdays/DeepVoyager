@@ -41,6 +41,7 @@ a:hover {
     /* display: flex; */
     flex-direction: column;
     display: none;
+    line-height: 31px !important;
 
 }
 
@@ -69,7 +70,7 @@ a:hover {
 .menu a {
     color: grey;
     font-size: 40px !important;
-    line-height: 20px;
+    
     /* font-weight: bold; */
     /* font-style: italic; */
     font-family: Geneva, Verdana, sans-serif;
